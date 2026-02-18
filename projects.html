@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leon Nguyen | Projects & Hobbies</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS file for styling -->
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1>Projects</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li> <!-- Link to home page -->
+          <li><a href="projects.html">Projects</a></li> <!-- Link to projects page -->
+          <li><a href="contact.html">Contact</a></li> <!-- Link to contact page -->
+        </ul>
+      </nav>
+      <button id="theme-toggle">Dark Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="content-section"> <!-- Main content section -->
+      <h2>My Projects & Hobbies</h2>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem;">
+        Here are some things I've worked on or enjoy doing in my free time. From coding experiments to exploring my culture and hobbies!
+      </p>
+
+      <div class="projects-grid">
+        <!-- Project/Hobby 1 -->
+        <article class="project-card">
+          <img src="images/project1.png" alt="Screenshot or photo related to this project">
+          <div class="project-content">
+            <h3>Personal Portfolio Website</h3>
+            <p>This very site! Built from scratch with HTML & CSS only. Features responsive design, dark mode toggle, and a clean layout. My first big web project for class.</p>
+            <small>Technologies: HTML, CSS, a tiny bit of JS for theme toggle</small>
+          </div>
+        </article>
+
+<!-- Project 2: Budgeting App (Software Project) -->
+<article class="project-card">
+  <img src="images/budget-desc.png" alt="Screenshot of my JavaFX Budgeting App">
+  <div class="project-content">
+    <h3>Personal Budgeting App (JavaFX)</h3>
+    <p>Two semesters ago, My group built a desktop budgeting application using JavaFX for the GUI. The app lets users track income, expenses, set monthly budgets per category, view current balance, and generate simple charts for spending trends. Data was stored locally. It was a great way to practice UI design with scenes, stages, controls like Tables, Charts, and event handling in Java.</p>
+    <small>Technologies: Java, JavaFX (FXML + CSS styling), basic file I/O</small>
+  </div>
+</article>
+
+<!-- Project/Hobby 3 -->
+<article class="project-card">
+  <div class="media-wrapper">
+    <iframe 
+      width="100%" 
+      height="315" 
+      src="https://www.youtube.com/embed/yslkYSjAPh4" 
+      title="How to make quick Pho tutorial" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="project-content">
+    <h3>Learning how to make Pho</h3>
+    <p>I am Vietnamese and one thing that I've always loved is Pho. Traditional pho takes more than 6-7 hours to make, but I have learned to make it faster with the help of this video!</p>
+    <small>I have made this recipe over the years at NMSU in my dorm. (PS I am not a chef but it's really good 😊)</small>
+  </div>
+</article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Leon Nguyen • Built from scratch</p>
+  </footer>
+
+  <script>
+    document.getElementById("theme-toggle").onclick = function(){
+      document.getElementsByTagName("body")[0].classList.toggle("dark");
+    };
+  </script>
+
+</body>
+</html>

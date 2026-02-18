@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leon Nguyen | Home</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS file for styling -->
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1>Home</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li> <!-- Link to home page -->
+          <li><a href="projects.html">Projects</a></li> <!-- Link to projects page -->
+          <li><a href="contact.html">Contact</a></li> <!-- Link to contact page -->
+        </ul>
+      </nav>
+      <!-- Dark mode toggle (extra credit) -->
+      <button id="theme-toggle">Dark Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/photo.jpg" alt="Leon Nguyen">
+      <h2>Welcome! I'm Leon Nguyen!</h2>
+      <p>
+        I'm a student based in Las Cruces, New Mexico, exploring web development, coding, and more.<br><br>
+        Currently building skills in HTML, CSS, and beyond — this site is my first big personal project!<br><br>
+        Feel free to check out my projects or get in touch.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Leon Nguyen • Built from scratch</p>
+  </footer>
+
+  <!-- Dark mode (from assignment) -->
+  <script>
+    document.getElementById("theme-toggle").onclick = function(){
+      document.getElementsByTagName("body")[0].classList.toggle("dark");
+    };
+  </script>
+
+</body>
+</html>

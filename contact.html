@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leon Nguyen | Contact</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS file for styling -->
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1>Contact</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li> <!-- Link to home page -->
+          <li><a href="projects.html">Projects</a></li> <!-- Link to projects page -->
+          <li><a href="contact.html">Contact</a></li>   <!-- Link to contact page -->
+        </ul>
+      </nav>
+      <button id="theme-toggle">Dark Mode</button> <!-- Dark mode toggle (extra credit) -->
+    </div>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <h2>Get in Touch</h2>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem;">
+        Whether you want to chat about web dev, share feedback on my projects, or just say hi!<br>
+        (This is for my class assignment, so feel free to reach out however works best.)
+      </p>
+
+      <div class="contact-container">
+        <!-- Contact Info Cards / Links -->
+        <div class="contact-methods">
+          <div class="contact-item">
+            <span class="icon">✉️</span>
+            <h3>Email</h3>
+            <p>leonyu58@nmsu.edu<br>(or use the form!)</p>
+          </div>
+
+          <div class="contact-item">
+            <span class="icon">🐱</span>
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/leonyu58" target="_blank" rel="noopener">github.com/leonyu58</a></p>
+          </div>
+
+          <div class="contact-item">
+            <span class="icon">📞</span>
+            <h3>Phone number</h3>
+            <p>001-123-XXXX</p>
+          </div>
+        </div>
+
+        <!-- Simple Contact Form (looks good, no backend needed) -->
+        <form class="contact-form">
+          <h3>Send a Message</h3>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Hey Leon, loved your budgeting app project!..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Leon Nguyen • Built from scratch for class</p>
+  </footer>
+
+  <script>
+    document.getElementById("theme-toggle").onclick = function(){
+      document.getElementsByTagName("body")[0].classList.toggle("dark");
+    };
+  </script>
+
+</body>
+</html>
